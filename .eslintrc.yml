@@ -1,0 +1,24 @@
+---
+
+plugins:
+  - import
+  - airbnb-base
+
+env:
+  node: true
+
+extends:
+  - airbnb-base
+  - eslint:recommended
+  - plugin:import/recommended
+  - plugin:import/errors
+  - plugin:import/warnings
+
+parserOptions:
+  ecmaVersion: latest
+
+rules:
+  no-console: 0
+  import/extensions: 0
+  import/no-named-as-default: 0
+  import/no-named-as-default-member: 0
