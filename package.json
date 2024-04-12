@@ -1,30 +1,22 @@
 {
-  "name": "@hexlet/code",
+  "name": "frontend-project-44",
   "version": "1.0.0",
-  "type": "module",
-  "description": "[![Actions Status](https://github.com/LisKurama/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LisKurama/frontend-project-44/actions)",
+  "description": "[![Actions Status](https://github.com/LisKurama/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LisKurama/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/d33343a39dc3f63402e6/maintainability)](https://codeclimate.com/github/LisKurama/frontend-project-44/maintainability)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
-  "author": "Vasfieva Alina",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.2",
-    "@eslint/js": "^9.0.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb": "^19.0.4",
+    "eslint": "^9.0.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "globals": "^15.0.0"
+    "eslint-plugin-import": "^2.29.1"
   }
 }
