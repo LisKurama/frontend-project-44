@@ -5,7 +5,8 @@
   "description": "[![Actions Status](https://github.com/LisKurama/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LisKurama/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/d33343a39dc3f63402e6/maintainability)](https://codeclimate.com/github/LisKurama/frontend-project-44/maintainability)",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
