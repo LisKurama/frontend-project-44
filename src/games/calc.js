@@ -11,13 +11,12 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const pair = cons(getRandomNumber(0, 10), getRandomNumber(0, 10));
-const a = car(pair);
-const b = cdr(pair);
-
 const random = Math.floor(Math.random() * operator.length);
 
 function getQuestionAndAnswer() {
+  const pair = cons(getRandomNumber(0, 10), getRandomNumber(0, 10));
+  const a = car(pair);
+  const b = cdr(pair);
   const question = `${a} ${operator[random]} ${b}`;
 
   let correctAnswer;
