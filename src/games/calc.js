@@ -11,9 +11,8 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const random = Math.floor(Math.random() * operator.length);
-
 function getQuestionAndAnswer() {
+  const random = Math.floor(Math.random() * operator.length);
   const pair = cons(getRandomNumber(0, 10), getRandomNumber(0, 10));
   const a = car(pair);
   const b = cdr(pair);
