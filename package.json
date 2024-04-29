@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/LisKurama/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LisKurama/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/d33343a39dc3f63402e6/maintainability)](https://codeclimate.com/github/LisKurama/frontend-project-44/maintainability)",
+  "description": "«Игры разума» — набор из пяти консольных игр для прокачки мозга.",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Vasfieva Alina",
   "license": "ISC",
   "dependencies": {
     "@hexlet/pairs": "^1.1.1",
