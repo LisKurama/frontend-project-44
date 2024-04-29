@@ -1,7 +1,3 @@
-import {
-  cons, car, cdr,
-} from '@hexlet/pairs';
-
 import game from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -11,9 +7,8 @@ function getRandomNumber(min, max) {
 }
 
 function getQuestionAndAnswer() {
-  const pair = cons(getRandomNumber(1, 50), getRandomNumber(1, 50));
-  const a = car(pair);
-  const b = cdr(pair);
+  const a = getRandomNumber(1, 50);
+  const b = getRandomNumber(1, 50);
   const c = Math.min(a, b);
   const question = `${a} ${b}`;
 
