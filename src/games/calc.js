@@ -1,6 +1,3 @@
-import {
-  cons, car, cdr,
-} from '@hexlet/pairs';
 import game from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -13,9 +10,8 @@ function getRandomNumber(min, max) {
 
 function getQuestionAndAnswer() {
   const random = Math.floor(Math.random() * operator.length);
-  const pair = cons(getRandomNumber(0, 10), getRandomNumber(0, 10));
-  const a = car(pair);
-  const b = cdr(pair);
+  const a = getRandomNumber(0, 10);
+  const b = getRandomNumber(0, 10);
   const question = `${a} ${operator[random]} ${b}`;
 
   let correctAnswer;
@@ -31,7 +27,7 @@ function getQuestionAndAnswer() {
       correctAnswer = a * b;
       break;
     default:
-      correctAnswer = NaN;
+      throw new Error(`Unknown order state: '${operator[random]}'!`);
   }
 
   return [question, correctAnswer.toString()];
