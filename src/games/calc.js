@@ -1,19 +1,19 @@
 import game from '../index.js';
-import { getRandomNumber, getRandom } from './utils.js';
+import { getRandomNumber } from './utils.js';
 
 const description = 'What is the result of the expression?';
 
 const operator = ['+', '-', '*'];
 
 function getQuestionAndAnswer() {
-  const random = getRandom(operator);
+  const random = operator[getRandomNumber(0, 2)];
   const a = getRandomNumber(0, 10);
   const b = getRandomNumber(0, 10);
-  const question = `${a} ${operator[random]} ${b}`;
+  const question = `${a} ${random} ${b}`;
 
   let correctAnswer;
 
-  switch (operator[random]) {
+  switch (random) {
     case '+':
       correctAnswer = a + b;
       break;
@@ -24,7 +24,7 @@ function getQuestionAndAnswer() {
       correctAnswer = a * b;
       break;
     default:
-      throw new Error(`Unknown order state: '${operator[random]}'!`);
+      throw new Error(`Unknown order state: '${random}'!`);
   }
 
   return [question, correctAnswer.toString()];
