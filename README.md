@@ -51,7 +51,7 @@ npm i
 
 ## brain-progression
 
-[![asciicast](https://asciinema.org/a/TXZkXPzVbp1W5GOb0OIFT9XBR.svg)](https://asciinema.org/a/TXZkXPzVbp1W5GOb0OIFT9XBR)
+[![asciicast](https://asciinema.org/a/7mW4sGx5L3MPWytEUcgC5z5j8.svg)](https://asciinema.org/a/7mW4sGx5L3MPWytEUcgC5z5j8)
 
 ## brain-prime
 
