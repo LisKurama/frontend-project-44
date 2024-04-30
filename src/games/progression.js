@@ -1,5 +1,5 @@
 import game from '../index.js';
-import { getRandomNumber, getRandom } from './utils.js';
+import { getRandomNumber, generateProgression } from './utils.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -8,26 +8,23 @@ function getQuestionAndAnswer() {
   const start = getRandomNumber(1, 10);
   const increment = getRandomNumber(2, 10);
 
-  const result = [];
+  const progression = generateProgression(increment, start, length);
+
+  const a = getRandomNumber(0, progression.length - 1);
+
   const replacingElement = '..';
+  progression[a] = replacingElement;
 
-  for (let i = 0; i <= length; i += 1) {
-    result.push(start + i * increment);
-  }
-
-  const a = getRandom(result);
-  result[a] = replacingElement;
-
-  const string = result.join(' ');
+  const string = progression.join(' ');
   const question = string;
 
   let correctAnswer;
 
-  for (let j = 1; j < result.length; j += 1) {
-    if (result[a] === replacingElement && result[0] !== replacingElement) {
-      correctAnswer = result[a - 1] + increment;
+  for (let j = 1; j < progression.length; j += 1) {
+    if (progression[a] === replacingElement && progression[0] !== replacingElement) {
+      correctAnswer = progression[a - 1] + increment;
     } else {
-      correctAnswer = result[1] - increment;
+      correctAnswer = progression[1] - increment;
     }
   }
 
