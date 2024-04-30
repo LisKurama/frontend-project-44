@@ -1,10 +1,7 @@
 import game from '../index.js';
+import { getRandomNumber } from './utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
-
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 function getQuestionAndAnswer() {
   const a = getRandomNumber(1, 50);
