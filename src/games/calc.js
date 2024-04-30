@@ -1,15 +1,12 @@
 import game from '../index.js';
+import { getRandomNumber, getRandom } from './utils.js';
 
 const description = 'What is the result of the expression?';
 
 const operator = ['+', '-', '*'];
 
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function getQuestionAndAnswer() {
-  const random = Math.floor(Math.random() * operator.length);
+  const random = getRandom(operator);
   const a = getRandomNumber(0, 10);
   const b = getRandomNumber(0, 10);
   const question = `${a} ${operator[random]} ${b}`;
