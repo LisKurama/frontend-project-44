@@ -1,7 +1,15 @@
 import game from '../index.js';
-import { getRandomNumber, generateProgression } from './utils.js';
+import getRandomNumber from './utils.js';
 
 const description = 'What number is missing in the progression?';
+
+const generateProgression = (increment, start, length) => {
+  const result = [];
+  for (let i = 0; i <= length; i += 1) {
+    result.push(start + i * increment);
+  }
+  return result;
+};
 
 function getQuestionAndAnswer() {
   const length = getRandomNumber(5, 8);
